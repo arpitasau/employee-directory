@@ -1,17 +1,17 @@
 # Employee Directory
 
 
-## User Story
+## Description
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+* The app helps users to view entire employee directory at once and quick access to their information.
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
+When the user loads the page, a table of employees renders. 
 
 The user should be able to:
 
-  * Sort the table by at least one category
+  * Sort the table by at name both alphabetically ascending and descending order.
 
-  * Filter the users by at least one property.
+  * Filter the users by name.
 
 
 <img src="/emp.png"> 
