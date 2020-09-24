@@ -1,13 +1,13 @@
+//importing dependencies
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import User from "./user"
-
 
 export default function (props) {
   const [employees, setEmployees] = useState([]);
   
   useEffect(() => {
-    grabEmployees()
+    findEmployees()
   }, [])
 
   const sortedEmps = 
@@ -31,8 +31,7 @@ export default function (props) {
  
   });
 
-  
-  const grabEmployees = async () => { 
+  const findEmployees = async () => { 
     const res = await axios(`https://randomuser.me/api/?results=200&nat=us`)
     setEmployees(res.data.results)
   }
@@ -40,7 +39,7 @@ export default function (props) {
   return (
     <>
       {sortedEmps
-          .map(u => <User key={u.cell} user={u} />)
+          .map(emp => <User key={emp.cell} user={emp} />)
       }
     </>
   )

@@ -6,7 +6,7 @@ import Headers from "./tableHeaders";
 export default function (props) {
     return (
         <>
-            <table className="table table-striped table-dark">
+            <table className="table table-striped">
                 <thead>
                     <tr><Headers  /></tr>
                 </thead>

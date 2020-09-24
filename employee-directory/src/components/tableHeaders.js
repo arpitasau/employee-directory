@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class TableHeaders extends React.Component {
     createTableHeaders = (props) => {
-        let headers = ["Image", "Name", "Phone", "Email", "DOB"];
+        let headers = ["Image", "Name",  "Email", "Phone", "DOB"];
 
 
         return headers.map(header => {

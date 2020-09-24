@@ -1,27 +1,25 @@
 .App-header {
   text-align: center;
-  background-color: #282c34;
-  min-height: 20vh;
+  background-color: gray;
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-  border-bottom: 5px solid cadetblue;
+  border-bottom: 5px solid turquoise;
+  border-top: 5px solid turquoise;
  
 }
 .App-header p {
   font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .table {
-  margin-top: 50px;
-  
+  margin-top: 50px; 
+}
+.table .table-striped>tr:nth-child(odd){
+  background-color:red;
 }
 .form-group {
   margin-left: auto;
@@ -38,8 +36,11 @@ tbody td {
 }
 
 .button {
-  background-color: #131527;
+  background-color: gray;
   color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: turquoise;
 }
 
 
