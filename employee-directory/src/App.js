@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+// import Table from "./components/table"
+// import Search from "./components/search"
+
 
 function App() {
+  const [search, setSearch] = useState(null);
+  const [sorter, setSorter] = useState("asc");
+
+    const searchToState = (event)=> {
+        let searchTerm = event.target.value;
+        setSearch(searchTerm)
+    }
+
+    const sortToState = (event)=> {
+      let sortVal = event.target.value;
+      setSorter(sortVal)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1><i className="fas fa-id-card"></i> Employee Directory</h1>
       </header>
+      <Search onSearchChanged={searchToState} onSortChanged={sortToState} />
+      <Table currentSearchValue= {search} currentSortState={sorter}/>
     </div>
   );
 }
