@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-// import Table from "./components/table"
-// import Search from "./components/search"
+import Table from "./components/table"
+import Search from "./components/search"
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1><i className="fas fa-id-card"></i> Employee Directory</h1>
+        <p>Click on carrots to filter by heading or use the search box to narrow your results.</p>
       </header>
       <Search onSearchChanged={searchToState} onSortChanged={sortToState} />
       <Table currentSearchValue= {search} currentSortState={sorter}/>
