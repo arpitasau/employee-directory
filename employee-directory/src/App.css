@@ -18,21 +18,32 @@
 .table {
   margin-top: 50px; 
 }
-.table .table-striped>tr:nth-child(odd){
-  background-color:red;
+ tr:nth-child(odd) {
+  background-color: lightskyblue;
+  }
+
+ tr:nth-child(even) {
+  background-color: turquoise;
+  }
+
+  th {
+     background-color: gray;
+     color: white;
+  }
+
+tbody td {
+  text-align: center;
 }
+
+
 .form-group {
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 180px;
   margin-top: 0;
 }
 #searchLabel {
   visibility: hidden;
-}
-
-tbody td {
-  text-align: center;
 }
 
 .button {
@@ -41,6 +52,7 @@ tbody td {
   border-width: 2px;
   border-style: solid;
   border-color: turquoise;
+  cursor: zoom-in;
 }
 
 
