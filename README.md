@@ -14,7 +14,7 @@ The user should be able to:
   * Filter the users by at least one property.
 
 
-<img src="../emp.png"> 
+<img src="/emp.png"> 
 
 ## Technology Used
 * Node.js
